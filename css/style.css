@@ -1,5 +1,4 @@
 body {
-  background-color: #14131A;
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
@@ -12,13 +11,13 @@ body {
 .header {
   display: flex;
   align-items: center;
-  padding-top: 4rem;
-  margin-bottom: 8rem;
+  padding-top: 40px;
+  margin-bottom: 80px;
 }
 
 .logo-link {
   display: inline-block;
-  margin-right: 5rem;
+  margin-right: 50px;
 }
 
 .nav-menu {
@@ -29,7 +28,7 @@ body {
 }
 
 .nav-menu-item {
-  margin-right: 3rem;
+  margin-right: 30px;
 }
 
 .nav-menu-link {
@@ -41,14 +40,57 @@ body {
   display: block;
   font-size: 24px;
   line-height: 28px;
-  margin-bottom: 3.8rem;
+  margin-bottom: 38px;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .film-description {
-  margin-top: 4rem;
+  margin-top: 40px;
   font-size: 16px;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.8);
   max-width: 423px;
+}
+
+.button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-text,
+.button-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.button-text {
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 10px;
+}
+
+.button-primary {
+  background-color: #fff;
+  color: #8D0019;
+}
+
+.button-link {
+  color:#fff;
+}
+
+.button-group {
+  margin-top: 70px;
+}
+
+.venom {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.blood {
+  background: url(../img/blood.png) no-repeat top right, #14131A url(../img/backgroud.jpg) no-repeat center center / 100%;
 }
