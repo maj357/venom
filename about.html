@@ -19,17 +19,26 @@
       <a href="index.html" class="logo-link"><img width="46" height="71" src="img/logo-2x.png" alt="venom-logo"
           class="logo-image">
       </a>
-      <nav class="nav"></nav>
-      <ul class="nav-menu">
-        <li class="nav-menu-item"><a class="nav-menu-link" href="about.html">о фильме</a>
-        </li>
-        <li class="nav-menu-item"><a class="nav-menu-link" href="trailer.html">трейлер</a>
-        </li>
-        <li class="nav-menu-item"><a class="nav-menu-link" href="actors.html">актеры</a>
-        </li>
-        <li class="nav-menu-item"><a class="nav-menu-link" href="premier.html">премьера</a>
-        </li>
-      </ul>
+      <nav class="nav">
+        <button class="menu-button">
+          <span class="menu-button-text">меню</span>
+          <img src="img/menu.svg" alt="icon: burger menu" class="menu-button-icon">
+        </button>
+        <button class="menu-close">
+          <span class="menu-close-text">закрыть</span>
+          <img src="img/arrow.svg" alt="icon: arrow right" class="menu-close-icon">
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item"><a class="nav-menu-link" href="about.html">о фильме</a>
+          </li>
+          <li class="nav-menu-item"><a class="nav-menu-link" href="trailer.html">трейлер</a>
+          </li>
+          <li class="nav-menu-item"><a class="nav-menu-link" href="actors.html">актеры</a>
+          </li>
+          <li class="nav-menu-item"><a class="nav-menu-link" href="premier.html">премьера</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <div class="content">
@@ -41,7 +50,7 @@
           В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов
           Marvel.
         </p>
-        <h3 class="content-subtitle">
+        <h3 class="content-subtitle content-subtitle-center">
           В главных ролях
         </h3>
         <ul class="list column-2">
@@ -70,22 +79,22 @@
               Режиссер
             </h3>
             <ul class="list">
-              <li class="list-item">Энди Серкис</li>
+              <li class="list-item list-item-creators">Энди Серкис</li>
             </ul>
             <h3 class="content-subtitle">
               Сценарий
             </h3>
             <ul class="list">
-              <li class="list-item">Келли Марсел</li>
-              <li class="list-item">Том Харди</li>
+              <li class="list-item list-item-creators">Келли Марсел</li>
+              <li class="list-item list-item-creators">Том Харди</li>
             </ul>
             <h3 class="content-subtitle">
               Продюсеры
             </h3>
             <ul class="list">
-              <li class="list-item">Ави Арад</li>
-              <li class="list-item">Том Харди</li>
-              <li class="list-item">Келли Марсел</li>
+              <li class="list-item list-item-creators">Ави Арад</li>
+              <li class="list-item list-item-creators">Том Харди</li>
+              <li class="list-item list-item-creators">Келли Марсел</li>
             </ul>
           </div>
         </div>
@@ -93,10 +102,12 @@
     </div>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
   <script src="./js/main.js"></script>
-  
+
 </body>
 
 </html>
