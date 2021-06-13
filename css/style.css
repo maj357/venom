@@ -22,6 +22,10 @@ img {
   max-height: 724px;
 }
 
+.carnage {
+  display: none;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -174,7 +178,7 @@ img {
   font-size: 16px;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.8);
-  max-width: 423px;
+  max-width: 432px;
   margin-bottom: 30px;
 }
 
@@ -221,6 +225,7 @@ img {
   width: 45px;
   height: 45px;
   border-radius:50%;
+  background-color: rgba(255, 255, 255, 0.5);
   border: none;
   cursor: pointer;
   transition: 0.3s;
@@ -228,6 +233,7 @@ img {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
+  outline: none;
 }
 
 .trailer .play:hover {
@@ -235,11 +241,11 @@ img {
 }
 
 .trailer .play-icon {
-  transform: translate(1px,2px);
-  -webkit-transform: translate(1px,2px);
-  -moz-transform: translate(1px,2px);
-  -ms-transform: translate(1px,2px);
-  -o-transform: translate(1px,2px);
+  transform: translate(15px,14px);
+  -webkit-transform: translate(15px,14px);
+  -moz-transform: translate(15px,14px);
+  -ms-transform: translate(15px,14px);
+  -o-transform: translate(15px,14px);
 }
 
 .poster-wrapper {
@@ -271,6 +277,52 @@ img {
   display: none;
 }
 
+.premier-bg {
+  background-image: url(../img/blood.png); 
+  background-position: 100% 90%;
+  background-repeat:no-repeat;
+}
+
+.premier-img {
+  width: 90%;
+  border-radius: 5px;
+}
+
+.premier-img-2 {
+  margin-bottom: 12%;
+  width: 90%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.facts-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.footer-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-block-logo img {
+  padding: 35px;
+}
+
+.container-bg {
+  background-image:url(../img/venom-bg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
 
 
 /* медиа */
@@ -293,13 +345,42 @@ img {
   }
 }
 
+@media (max-width: 800px) {
+  .premier-img {
+    display: none;
+  }
+
+  .premier-img-2 {
+    margin-bottom: 5%;
+  }
+
+  .content-text {
+    max-width: 90%;
+    margin-bottom: 0;
+  }
+
+  .carnage {
+    display: inline-block;
+    width: 90%;
+    margin-top: 5%;
+  }
+
+  .facts-title {
+    margin-top: 0;
+  }
+
+  .col {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .blood {
     background: url(../img/blood.png) no-repeat top right 200%, #14131A url(../img/backgroud.jpg) no-repeat center center / 100%;
   }
 
   .venom {
-    top: 13%;
+    top: 20%;
   }
 }
 
@@ -470,6 +551,10 @@ img {
     background-size: 70%;
   }
 
+  .content {
+    padding-bottom: 0;
+  }
+
   .list-item-creators {
     font-size: 16px;
   }
@@ -478,6 +563,35 @@ img {
     width: 40%;
     top: 15%;
   }
+
+  .carnage {
+    width: 100%;
+  }
+
+  .facts-title {
+    text-align: center;
+  }
+
+  .content-title {
+    text-align: center;
+  }
+
+  .content-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .premier-img-2 {
+    margin: 20px auto;
+    width: 100%;
+  }
+
+.footer-block-logo img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding: 0;
+}
 }
 
 @media (max-width:375px) {
